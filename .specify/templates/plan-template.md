@@ -31,7 +31,12 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] **Interpretability & Debuggability**: Does the design prioritize transparency and avoid black-box components where possible?
+- [ ] **Verifiable & Safe Logic**: Is all safety-critical logic verifiable and deterministic?
+- [ ] **Modular & Testable Design**: Is the system composed of independent, testable modules with clear APIs?
+- [ ] **Rigorous Testing Regimen**: Does the plan include both simulation and real-world testing phases before deployment?
+- [ ] **Secure & Explicit Configuration**: Are secrets and configurations handled securely, without hardcoding?
+- [ ] **Attribution of Research**: Are all external sources, models, and datasets properly attributed?
 
 ## Project Structure
 

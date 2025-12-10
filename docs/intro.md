@@ -38,4 +38,17 @@ This is not just a static textbook. It includes:
 
 Navigate through the chapters using the sidebar on the left. Start with Part 1 if you're new to the field, or jump to specific topics that interest you.
 
+## Our Principles
+
+This project adheres to a strict constitution that guides our development. Our core principles are:
+
+- **Interpretability and Debuggability**
+- **Verifiable and Safe Logic**
+- **Modular and Testable Design**
+- **Rigorous Testing Regimen**
+- **Secure and Explicit Configuration**
+- **Attribution of Research**
+
+These principles ensure that our work is robust, safe, and maintainable.
+
 Ready to begin? Let's dive into the fascinating world of Physical AI and Humanoid Robotics!

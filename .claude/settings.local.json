@@ -12,7 +12,10 @@
       "Bash(npm install:*)",
       "Bash(npx create-docusaurus@latest . classic --typescript)",
       "Bash(npm run clear:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(mkdir:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: Complete ChatbotWidget integration and production build\n\n- Created ChatbotWidget React component with full functionality\n- Added ChatbotWidget styling with floating button and chat interface\n- Integrated ChatbotWidget into Docusaurus via Root.tsx theme component\n- Implemented API client for backend communication\n- Added loading states, error handling, and citation sources\n- Successfully built production bundle\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []

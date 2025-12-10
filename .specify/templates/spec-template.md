@@ -113,3 +113,12 @@
 - **SC-002**: [Measurable metric, e.g., "System handles 1000 concurrent users without degradation"]
 - **SC-003**: [User satisfaction metric, e.g., "90% of users successfully complete primary task on first attempt"]
 - **SC-004**: [Business metric, e.g., "Reduce support tickets related to [X] by 50%"]
+
+---
+
+## Constitutional Adherence
+
+- **Attribution**: If this feature uses external datasets, models, or research, list them here.
+- **Security**: Note any new sensitive configurations (e.g., API keys) and confirm they will be managed securely.
+- **Modularity**: Briefly describe how this feature will be implemented as a self-contained module.
+
