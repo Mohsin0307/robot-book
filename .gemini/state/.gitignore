@@ -1,0 +1,8 @@
+# Ignore runtime state files - these are local to your machine
+context.json
+todos.json
+session-*.json
+
+# Keep template files
+!context.template.json
+!todos.template.json

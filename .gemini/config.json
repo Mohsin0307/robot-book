@@ -1,0 +1,28 @@
+{
+  "model": "gemini-2.0-flash-exp",
+  "apiVersion": "v1beta",
+  "temperature": 0.7,
+  "topP": 0.95,
+  "topK": 40,
+  "maxOutputTokens": 8192,
+  "safetySettings": {
+    "HARM_CATEGORY_HARASSMENT": "BLOCK_NONE",
+    "HARM_CATEGORY_HATE_SPEECH": "BLOCK_NONE",
+    "HARM_CATEGORY_SEXUALLY_EXPLICIT": "BLOCK_NONE",
+    "HARM_CATEGORY_DANGEROUS_CONTENT": "BLOCK_NONE"
+  },
+  "projectSettings": {
+    "sharedStateDir": ".gemini/state",
+    "promptHistoryDir": "history/prompts",
+    "adrDir": "history/adr",
+    "specDir": "specs",
+    "rulesFile": ".gemini/rules/guidelines.md",
+    "constitutionFile": ".specify/memory/constitution.md"
+  },
+  "features": {
+    "autoSyncState": true,
+    "loadClaudeContext": true,
+    "createPHR": true,
+    "suggestADR": true
+  }
+}

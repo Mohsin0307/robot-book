@@ -1,0 +1,50 @@
+{
+  "name": "my-research-paper",
+  "version": "1.0.0",
+  "description": "AI-Native Textbook for Physical AI & Humanoid Robotics",
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "tsc",
+    "gemini:init": "node scripts/gemini-init.js",
+    "gemini:chat": "node scripts/gemini-chat.js",
+    "gemini:import": "node scripts/gemini-to-claude.js",
+    "claude:export": "node scripts/claude-to-gemini.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@docusaurus/core": "^3.9.2",
+    "@docusaurus/module-type-aliases": "^3.9.2",
+    "@docusaurus/preset-classic": "^3.9.2",
+    "@docusaurus/tsconfig": "^3.9.2",
+    "@docusaurus/types": "^3.9.2",
+    "@google/generative-ai": "^0.21.0",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "clsx": "^2.1.1",
+    "dotenv": "^16.4.7",
+    "prism-react-renderer": "^2.4.1",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "rehype-katex": "^5.0.0",
+    "remark-math": "^3.0.1",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.48.1",
+    "@typescript-eslint/parser": "^8.48.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react": "^7.37.5",
+    "prettier": "^3.7.4"
+  }
+}

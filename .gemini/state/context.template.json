@@ -1,0 +1,11 @@
+{
+  "lastUpdated": "",
+  "lastAgent": "claude|gemini",
+  "conversationSummary": "Brief summary of the last conversation",
+  "currentFeature": "feature-name or null",
+  "currentBranch": "branch-name",
+  "completedTasks": [],
+  "pendingTasks": [],
+  "recentFiles": [],
+  "notes": []
+}

@@ -1,0 +1,10 @@
+{
+  "lastSync": "",
+  "todos": [
+    {
+      "content": "Task description",
+      "activeForm": "Task in progress form",
+      "status": "pending|in_progress|completed"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.specify/scripts/bash/create-phr.sh:*)",
+      "Bash(bash:*)",
+      "Bash(if [ -d \"C:/Users/Mirza Mohsin Baig/Desktop/book/my-research-paper/specs/001-docusaurus-docs-site/checklists\" ])",
+      "Bash(then echo \"EXISTS\")",
+      "Bash(else echo \"NOT_FOUND\")",
+      "Bash(fi)",
+      "Bash(git rev-parse:*)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npx create-docusaurus@latest . classic --typescript)",
+      "Bash(npm run clear:*)",
+      "Bash(npm run build:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

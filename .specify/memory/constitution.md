@@ -1,55 +1,46 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+
+
+# Physical AI & Humanoid Robotics Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Modular Architecture First
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+Physical AI systems must be built as independent, testable, reusable modules (ROS 2 nodes, VLA pipelines, simulation layers). Every component must have a clear purpose and zero hidden coupling.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### II. Simulation-First Development
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+All robotics logic must be validated in digital twin environments (Gazebo, Unity, Isaac Sim) before deployment to physical hardware. No direct hardware testing without simulation approval.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### III. Test-Driven Robotics (Mandatory)
 
-### [PRINCIPLE_6_NAME]
+All motion planning, perception, autonomy, and safety logic must follow strict TDD. Tests must be written first, approved, executed with failure, then implemented.
 
+### IV. Safety & Integration Standards
 
-[PRINCIPLE__DESCRIPTION]
+Every subsystem interacting with actuators, sensors, or AI models must undergo integration testing: ROS 2 topic contracts, latency checks, perception–action alignment, and safety envelope validation.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### V. Observability & Fail-Safe Design
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+All modules must support structured logs, state introspection, telemetry, and safe fallback states. Versioning must follow MAJOR.MINOR.PATCH rules.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### VI. Simplicity & Human-In-The-Loop Control
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+Systems must remain interpretable, debuggable, and override-friendly. No unnecessary complexity; follow YAGNI principles.
+
+## Engineering Requirements
+
+Simulation pipelines, physical hardware constraints, sensor noise models, motor limits, and safety envelopes must be defined before any robotics logic is implemented.
+
+## Development Workflow
+
+* All PRs must pass simulation tests.
+* Every feature requires documentation.
+* Deployment allowed only after simulation + real-world test logs are approved.
+* Reviewers must ensure compliance with Constitution.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This Constitution overrides all other engineering practices. Amendments require documentation, review, and system-wide compatibility checks.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-06 | **Last Amended**: 2025-12-06

@@ -1,0 +1,101 @@
+openapi: 3.0.0
+info:
+  title: AI Textbook Backend API
+  version: 1.0.0
+  description: Backend API for AI-native textbook with RAG chatbot, auth, translation
+
+servers:
+  - url: http://localhost:8000
+    description: Local development
+  - url: https://api-textbook.example.com
+    description: Production
+
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Service healthy
+
+  /auth/signup:
+    post:
+      summary: User registration
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email: { type: string }
+                password: { type: string }
+                education_level: { type: string, enum: [beginner, intermediate, advanced] }
+                goals: { type: string }
+                prior_knowledge: { type: string }
+      responses:
+        '201':
+          description: User created
+
+  /auth/login:
+    post:
+      summary: User login
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email: { type: string }
+                password: { type: string }
+      responses:
+        '200':
+          description: Login successful
+
+  /auth/logout:
+    post:
+      summary: User logout
+      responses:
+        '200':
+          description: Logout successful
+
+  /chat/ask:
+    post:
+      summary: Ask chatbot a question
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                question: { type: string }
+      responses:
+        '200':
+          description: Answer generated
+
+  /translate:
+    post:
+      summary: Translate chapter to Urdu
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                chapter_id: { type: string }
+      responses:
+        '200':
+          description: Translation returned
+
+  /personalize:
+    post:
+      summary: Get personalized chapter content
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                chapter_id: { type: string }
+      responses:
+        '200':
+          description: Personalized content returned
